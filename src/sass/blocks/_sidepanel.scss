@@ -1,0 +1,46 @@
+.sidepanel {
+	position: fixed;
+	top: 230px;
+	left: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 340px;
+	z-index: 3;
+	&__link {
+		color: #ffffff;
+		text-decoration: none;
+		transition: 0.5s all;
+		&:hover {
+			color: $main-color;
+		}
+		.icon-facebook2:before {
+			content: "\ea91";
+		}
+		.icon-instagram:before {
+			content: "\ea92";
+		}
+		.icon-github:before {
+			content: "\eab0";
+		}
+	}
+	&__divider {
+		width: 2px;
+		height: 70px;
+		background-color: #ffffff;
+	}
+	&__text {
+		height: 150px;
+		width: 25px;
+		span {
+			transform: rotate(-90deg) translate(-40%, -260%);
+			display: block;
+			width: 150px;
+			font-weight: 700;
+			font-size: 16px;
+			color: #FFFFFF;
+		}
+		
+	}
+}
