@@ -1,0 +1,100 @@
+.experience {
+    padding-top: 120px;
+    background-color: $second-color;
+    .divider {
+        margin: 25px auto 60px auto;
+    }
+    &__title {
+        margin: 0 auto;
+        z-index: 1;
+        position: relative;
+        width: 46px;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 3px;
+        }
+    }
+    &__subtitle {
+        margin-top: 6px;
+        text-align: center;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(425px, auto));
+        grid-template-rows: repeat(2, minmax(378x, auto));
+        grid-auto-rows: 1fr;
+        column-gap: 136px;
+    }
+    &__elem {
+        display: grid;
+        grid-template-columns: 50px minmax(417px, auto);
+        grid-template-rows: 30px 129px;
+        grid-auto-rows: 1fr;
+        row-gap: 43px;
+        ul {
+            list-style-type: none;
+        }
+        &-line {
+            grid-row: 1/3;
+            height: 343px;
+            width: 1px;
+            background-color: #ffffff;
+            z-index: 1;
+            position: relative;
+            @include before_circle;
+            &:before {
+                width: 15px;
+                height: 15px;
+                top: -10px;
+                left: -7px
+            }
+        }
+        &-item {
+            display: grid;
+            grid-template-columns: 36px minmax(339px, auto);
+            grid-template-rows: 21px 20px minmax(90px, auto);
+            column-gap: 20px;
+            position: relative;
+            &-line {
+                width: 42px;
+                height: 1px;
+                background-color: #ffffff;
+                top: 0px;
+                left: -50px;
+                position: absolute;
+            }
+            &-circle {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                z-index: 1;
+                position: relative;
+                img {
+                    padding: 3px 0 0 10px;
+                }
+                @include before_circle;
+                &:before {
+                    top: -10px;
+                    left: -7px
+                }
+            }
+            &-title {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                line-height: 0;
+            }
+            &-subtitle {
+                grid-column: 2/3;
+                grid-row: 2/3;
+                line-height: 0;
+            }
+            &-text {
+                grid-column: 1/3;
+                grid-row: 3/4;
+                font-size: 12px;
+                line-height: 18px;
+                color: #ffffff;
+            }
+        }
+    }
+}
