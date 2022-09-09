@@ -18,12 +18,13 @@
     &__block {
         padding-top: 7px;
         .divider {
-            margin-top: 0;
+            margin: 0;
         }
     }
     &__title {
         position: relative;
         padding-left: 10px;
+        z-index: 1;
         @include before_circle;
     }
     &__text {
