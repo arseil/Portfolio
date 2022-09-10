@@ -1,0 +1,19 @@
+.portfolio {
+    padding-top: 120px;
+    background-color: $second-color;
+    &__title {
+        text-align: center;
+		z-index: 1;
+		position: relative;
+		@include before_circle;
+		&:before {
+			top: -6px;
+			left: 50%;
+            transform: translateX(-50%);
+		}
+    }
+    &__subtitle {
+		margin-top: 6px;
+		text-align: center;
+    }
+}
