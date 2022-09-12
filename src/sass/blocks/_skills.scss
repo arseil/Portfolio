@@ -1,21 +1,6 @@
 .skills {
     padding-top: 120px;
     background-color: $second-color;
-    &__title {
-        margin: 0 auto;
-		z-index: 1;
-		position: relative;
-		width: 46px;
-		@include before_circle;
-		&:before {
-			top: -6px;
-			left: 14px;
-		}
-    }
-    &__subtitle {
-		margin-top: 6px;
-		text-align: center;
-    }
     &__wrapper {
         padding: 60px 10px 0 10px;
         display: grid;
