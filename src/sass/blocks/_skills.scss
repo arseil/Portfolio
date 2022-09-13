@@ -1,75 +1,75 @@
 .skills {
-    padding-top: 120px;
-    background-color: $second-color;
-    &__wrapper {
-        padding: 60px 10px 0 10px;
-        display: grid;
-        grid-template-columns: repeat(4, minmax(270px, auto));
-        grid-template-rows: repeat(2, minmax(270px, auto));
-        gap: 13px 13px;
-    }
-    &__item {
-        border: 1px solid #ffffff;
-        padding: 30px 30px;
-        &-icon {
-            &-jquery {
-                margin-top: 16px;
-            }
-            &-mongo {
-                margin-top: 8px;
-            }
-        }
-        &-title {
-            margin-top: 20px;
-            &-jquery {
-                margin-top: 33px;
-            }
-            &-mongo {
-                margin-top: 32px;
-            }
-        }
-        &-descr {
-            margin-top: 15px;
-            font-size: 12px;
-            line-height: 18px;
-            color: #ffffff;
-        }
-    }
-    &__scale {
-        padding-top: 120px;
-        display: grid;
-        grid-template-columns: repeat(3, 350px);
-        grid-template-rows: repeat(2, 70px);
-        gap: 30px 45px;
-        &-item {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            &-head {
-                display: flex;
-                justify-content: space-between;
-                &-title {
-                    padding-left: 14px;
-                    position: relative;
-                    z-index: 1;
-                    @include before_circle;
-                }
-                &-percent {
-                    font-weight: 500;
-                }
-            }
-            &-block {
-                z-index: 1;
-                width: 350px;
-                height: 14px;
-                border-radius: 4px;
-                background-color: #E8E4DE;
-                &-grade {
-                    background-color: $main-color;
-                    height: 14px;
-                    border-radius: 4px;
-                }
-            }
-        }
-    }
+	padding-top: 120px;
+	background-color: $second-color;
+	&__wrapper {
+		padding: 60px 10px 0 10px;
+		display: grid;
+		grid-template-columns: repeat(4, minmax(270px, auto));
+		grid-template-rows: repeat(2, minmax(270px, auto));
+		gap: 13px 13px;
+	}
+	&__item {
+		border: 1px solid #ffffff;
+		padding: 30px 30px;
+		&-icon {
+			&-jquery {
+				margin-top: 16px;
+			}
+			&-mongo {
+				margin-top: 8px;
+			}
+		}
+		&-title {
+			margin-top: 20px;
+			&-jquery {
+				margin-top: 33px;
+			}
+			&-mongo {
+				margin-top: 32px;
+			}
+		}
+		&-descr {
+			margin-top: 15px;
+			font-size: 12px;
+			line-height: 18px;
+			color: #ffffff;
+		}
+	}
+	&__scale {
+		padding-top: 120px;
+		display: grid;
+		grid-template-columns: repeat(3, 350px);
+		grid-template-rows: repeat(2, 70px);
+		gap: 30px 45px;
+		&-item {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			&-head {
+				display: flex;
+				justify-content: space-between;
+				&-title {
+					padding-left: 14px;
+					position: relative;
+					z-index: 1;
+					@include before_circle;
+				}
+				&-percent {
+					font-weight: 500;
+				}
+			}
+			&-block {
+				z-index: 1;
+				width: 350px;
+				height: 14px;
+				border-radius: 4px;
+				background-color: #E8E4DE;
+				&-grade {
+					background-color: $main-color;
+					height: 14px;
+					border-radius: 4px;
+				}
+			}
+		}
+	}
 }
