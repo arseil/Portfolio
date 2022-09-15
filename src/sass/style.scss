@@ -11,6 +11,9 @@
 	padding: 0;
 }
 
+p {
+	margin-bottom: 0;
+}
 
 .container {
 	width: 1140px;
@@ -36,3 +39,4 @@
 @import 'blocks/price';
 @import 'blocks/contacts';
 @import 'blocks/policy';
+@import 'blocks/media';
