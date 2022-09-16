@@ -10,8 +10,23 @@
     }
     .experience {
         &__wrapper {
-            padding: 60px 10px;
+            padding: 60px 10px 0 10px;
             column-gap: 100px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(4,minmax(230px,auto));
+            padding: 60px 0 0 0;
+        }
+        &__item {
+            padding: 20px 20px;
+        }
+        &__scale {
+            justify-content: center;
+            grid-template-columns: repeat(2,350px);
+            grid-template-rows: repeat(3,70px);
+            gap: 30px 120px;
         }
     }
 }
@@ -37,7 +52,6 @@
                 column-gap: 15px;
             }
         }
-        
     }
 }
 
@@ -89,6 +103,21 @@
             grid-template-columns: repeat(2,325px);
         }
     }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(3,minmax(230px,auto));
+            grid-template-rows: repeat(3,minmax(270px,auto));
+        }
+        &__scale {
+            grid-template-columns: repeat(2,300px);
+            gap: 30px 70px;
+            &-item {
+                &-block {
+                    width: 300px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -114,9 +143,27 @@
     .experience {
         padding-top: 40px;
         &__wrapper {
-            padding: 25px 10px;
+            padding: 25px 10px 0 10px;
             row-gap: 40px;
             grid-template-columns: 520px;
+        }
+    }
+    .skills {
+        padding-top: 40px;
+        .title__section-subtitle {
+            margin-top: 20px;
+            font-size: 24px;
+            line-height: 25px;
+        }
+        &__wrapper {
+            grid-template-columns: repeat(2,minmax(230px,auto));
+            grid-template-rows: repeat(4,minmax(270px,auto));
+            padding: 30px 0 0 0;
+        }
+        &__scale {
+            padding-top: 40px;
+            grid-template-columns: repeat(1,300px);
+            grid-template-rows: repeat(6,70px);
         }
     }
 
@@ -167,9 +214,35 @@
     .experience {
         padding-top: 40px;
         &__wrapper {
-            padding: 25px 10px;
+            padding: 40px 8px 0 12px;
             row-gap: 40px;
             grid-template-columns: 300px;
+            justify-content: center;
+        }
+        &__elem {
+            li {
+                &:nth-child(1) {
+                    padding-top: 35px;
+                }
+            }
+            &-item {
+                &-icon {
+                    top: 20px;
+                }
+                &-head {
+                    padding-top: 10px;
+                }
+                &:before {
+                    top: 30px;
+                }
+            }
+        }
+    }
+    .skills {
+        &__wrapper {
+            justify-content: center;
+            grid-template-columns: repeat(1, 270px);
+            grid-template-rows: repeat(7,minmax(270px, auto));
         }
     }
 }
